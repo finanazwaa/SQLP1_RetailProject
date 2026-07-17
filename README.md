@@ -22,6 +22,23 @@ The dataset contains transactional retail data, including:
 - Transaction Date
 
 ## Database Schema
+```mermaid
+erDiagram
+
+    RETAIL_SALES {
+        int transaction_id PK
+        date sale_date
+        time sale_time
+        int customer_id
+        string gender
+        int age
+        string category
+        int quantiy
+        decimal price_per_unit
+        decimal cogss
+        decimal total_sale
+    }
+```
 
 ## Business Questions
 1. What are the top-selling products?
